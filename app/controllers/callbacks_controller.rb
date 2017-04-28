@@ -1,6 +1,6 @@
 # User login callbacks
 class CallbacksController < Devise::OmniauthCallbacksController
-  %i[github facebook google_oauth2].each do |provider|
+  %i[github facebook google_oauth2 shibboleth].each do |provider|
     define_method provider do
       auth = request.env['omniauth.auth']
       # Find an identity here

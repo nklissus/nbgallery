@@ -97,6 +97,8 @@ The [docker-run.sh](docker-run.sh) script will run the image with a bunch of env
  * FACEBOOK_SECRET - Optional. This is the OAuth secret for Facebook authentication
  * GOOGLE_ID - Optional. This is the OAuth ID for Google authentication
  * GOOGLE_SECRET - Optional. This is the OAuth secret for Google authentication
+ * SP_CERT - Optional. Used for Shibboleth authentication
+ * SP_KEY - Optional. Used for Shibboleth authentication
  * SECRET_KEY_BASE - `rake secret` will generate one
 
 The [docker-run.sh](docker-run.sh) script will also mount a local directory for logs and data (notebooks, etc) so those will persist outside the container.
