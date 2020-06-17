@@ -93,9 +93,9 @@ gem 'redcarpet'
 gem 'rinku'
 gem 'rouge'
 
-
 # Development only
 group :development, :test do
+  gem 'bullet'
   gem 'dotenv'
   gem 'overcommit', require: false
   gem 'rubocop', require: false

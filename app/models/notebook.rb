@@ -250,7 +250,7 @@ class Notebook < ActiveRecord::Base
         'IF(SUM(score), SUM(score), 0.0) as recscore',
         score_str
       ].join(', '))
-      .group('notebooks.id')
+      .group('notebooks.id').includes([:updater,:owner,:creator,:shares,:deprecated_notebook,:notebook_summary,:thread])
   end
 
   # Helper function to join things with a permissions clause
